@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- daisy ui cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- daisy ui cdn end -->
+ 
+     <!-- poppins font cdn -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Blog Page</title>
+</head>
+<body class=" poppins-regular bg-[#F4F7FF]">
+    <header class="mx-36 my-7">
+        <!-- navbar section start -->
+          <nav>
+             <div class=" bg-base-100 border-none rounded-lg py-4 px-6 mt-6">
+              <div class="navbar ">
+                <div class="flex-none">
+                  <button class="btn btn-square btn-ghost">
+                    <img src="assets/logo.png" alt="">
+                  </button>
+                </div>
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-xl">Dev<span class="">Board</span></a>
+                </div>
+                <div class="flex gap-10">
+                  <div id="back-to-desk" >
+                    <button id="back-to-desk" class="btn  btn-ghost bg-blue-800 text-white">
+                      Back to Desk
+                    </button>
+                  </div>
+                </div>
+              </div>
+             </div>
+          </nav>
+          <!-- nav section end -->
+      </header>
+      <h1 class="flex justify-center font-bold text-3xl"> Blogs </h1>
+    <main class="mx-36 my-7 pb-4">
+      <div class="my-6 bg-white p-6 rounded-lg">
+        <h1 class="font-semibold text-xl">Question-1: What are the different ways to select an element in the DOM? </h1>
+        <p class="border-b-2 border-dashed border-b-[#dedada]"></p>
+        <p> There are 5 ways to select elements in the DOM.
+            <li> getElementsByTagName()</li>
+            <li> getElementsByClassName()</li>
+            <li> getElementById()</li>
+            <li> querySelector()</li>
+            <li> querySelectorAll()</li>
+          </p>
+      </div>
+      <div class="my-6 bg-white p-6 rounded-lg">
+        <h1 class="font-semibold text-xl" >Question-2: What is the difference between innerHTML, innerText, and textContent ? </h1>
+        <p class="border-b-2 border-dashed border-b-[#dedada]"></p>
+        <p> "innerHTML" allows us to get or set the HTML content of an element, meaning it recognizes and renders HTML tags. "innerText", on the other hand, retrieves or sets only the visible text inside an element, ignoring hidden elements and trimming extra spaces. Meanwhile, "textContent" gets or sets all text within an element, including hidden elements, but it does not parse HTML tags, treating them as plain text instead.</p>
+      </div>
+      <div class="my-6 bg-white p-6 rounded-lg">
+        <h1 class="font-semibold text-xl">Question-3: What is event delegation in the DOM?</h1>
+        <p class="border-b-2 border-dashed border-b-[#dedada]"></p>
+        <p> Event delegation is a technique where a parent element handles events for its child elements using a single event listener. This works because events bubble up from child to parent, allowing efficient handling, even for dynamically added elements.
+        </p>
+      </div>
+      <div class="my-6 bg-white p-6 rounded-lg">
+        <h1 class="font-semibold text-xl">Question-4: What is event bubbling in the DOM?
+        </h1>
+        <p class="border-b-2 border-dashed border-b-[#dedada]"></p>
+        <p> Event bubbling is a process in the DOM where an event starts from the target element and moves upward through its parent elements.</p>
+      </div>
+    <div class="my-6 bg-white p-6 rounded-lg">
+      <h1 class="font-semibold text-xl">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+      <p class="border-b-2 border-dashed border-b-[#dedada]"></p>
+      <p>To create an element in JavaScript,we can use document.createElement(). To add an element, we can use methods like appendChild() to place it in the desired location within the DOM. To remove an element, we can use the remove() method or removeChild() on its parent element to remove it from the DOM.</p>
+    </div>
+    </main>
+   <script>
+    // back to desk
+document.getElementById("back-to-desk").addEventListener("click",function(){
+  window.location.href="index.html"
+})
+   </script>
+</body>
+</html>
